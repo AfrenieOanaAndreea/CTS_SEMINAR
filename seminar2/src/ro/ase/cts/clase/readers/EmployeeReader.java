@@ -10,10 +10,15 @@ import ro.ase.cts.clase.Angajat;
 import ro.ase.cts.clase.Aplicant;
 import ro.ase.cts.clase.Elev;
 
-public class EmployeeReader {
+public class EmployeeReader extends Reader{
 
-	public static List<Aplicant> readAngajati(String file) throws FileNotFoundException {
-		Scanner input2 = new Scanner(new File(file));
+	public EmployeeReader(String filename) {
+		super(filename);
+	
+	}
+
+	public List<Aplicant> readAplicants() throws FileNotFoundException {
+		Scanner input2 = new Scanner(new File(super.filename));
 		input2.useDelimiter(",");
 		List<Aplicant> angajati = new ArrayList<Aplicant>();
 
@@ -34,6 +39,8 @@ public class EmployeeReader {
 		input2.close();
 		return angajati;
 	}
+
+
 
 
 }
