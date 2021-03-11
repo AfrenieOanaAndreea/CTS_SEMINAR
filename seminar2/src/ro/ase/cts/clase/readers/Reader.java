@@ -31,6 +31,6 @@ public abstract class Reader {
 			aplicant.setPrenume(prenume);
 			aplicant.setPunctaj(punctaj);
 			aplicant.setVarsta(varsta);
-			aplicant.setDenumireProiect(nr, vect);
+			aplicant.setDenumiriProiecte(vect, nr);
 		}
 	}
