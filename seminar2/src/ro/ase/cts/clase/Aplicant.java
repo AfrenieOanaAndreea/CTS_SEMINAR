@@ -35,11 +35,11 @@ public abstract class Aplicant {
 	}
 
 	public void afisareStatutProiect(Proiect proiect) {
-		StringBuilder str=new StringBuilder("Aplicantul ").append(nume).append(" ").append(prenume);
-		boolean esteAcceptat=punctaj>proiect.getPragPunctaj();
-		
-		str.append(esteAcceptat?"a fost acceptat":"nu a fost acceptat");
-		
+		StringBuilder str = new StringBuilder("Aplicantul ").append(nume).append(" ").append(prenume);
+		boolean esteAcceptat = punctaj > proiect.getPragPunctaj();
+
+		str.append(esteAcceptat ? "a fost acceptat" : "nu a fost acceptat");
+
 		System.out.println(str);
 	}
 
@@ -84,6 +84,6 @@ public abstract class Aplicant {
 	@Override
 	public String toString() {
 		return "Nume=" + nume + ", prenume=" + prenume + ", varsta=" + varsta + ", punctaj=" + punctaj
-				+ ", nr_proiecte=" + nr_proiecte + ", denumireProiect=" + Arrays.toString(denumireProiect) ;
+				+ ", nr_proiecte=" + nr_proiecte + ", denumireProiect=" + Arrays.toString(denumireProiect);
 	}
 }

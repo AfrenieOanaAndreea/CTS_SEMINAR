@@ -8,13 +8,13 @@ import java.util.Scanner;
 
 import ro.ase.cts.clase.Angajat;
 import ro.ase.cts.clase.Aplicant;
-import ro.ase.cts.clase.Elev;
 
-public class EmployeeReader extends Reader{
+
+public class EmployeeReader extends Reader {
 
 	public EmployeeReader(String filename) {
 		super(filename);
-	
+
 	}
 
 	public List<Aplicant> readAplicants() throws FileNotFoundException {
@@ -23,7 +23,7 @@ public class EmployeeReader extends Reader{
 		List<Aplicant> angajati = new ArrayList<Aplicant>();
 
 		while (input2.hasNext()) {
-			Angajat a=new Angajat();
+			Angajat a = new Angajat();
 			super.readAplicant(a, input2);
 			int salariu = input2.nextInt();
 			String ocupatie = input2.next();
@@ -34,8 +34,5 @@ public class EmployeeReader extends Reader{
 		input2.close();
 		return angajati;
 	}
-
-
-
 
 }

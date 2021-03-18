@@ -9,10 +9,9 @@ import java.util.List;
 
 public class UniversalReader {
 
-	public static List<Aplicant> readAplicants(Reader reader) throws FileNotFoundException{
-		
+	public static List<Aplicant> readAplicants(Reader reader) throws FileNotFoundException {
+
 		return reader.readAplicants();
 	}
-	
 
 }

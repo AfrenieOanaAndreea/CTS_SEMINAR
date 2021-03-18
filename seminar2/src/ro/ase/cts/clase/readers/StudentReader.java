@@ -10,9 +10,7 @@ import ro.ase.cts.clase.Aplicant;
 import ro.ase.cts.clase.Student;
 
 public class StudentReader extends Reader {
-	
-	
-	
+
 	public StudentReader(String filename) {
 		super(filename);
 	}
@@ -24,7 +22,7 @@ public class StudentReader extends Reader {
 
 		while (input.hasNext()) {
 			Student s;
-			s=new Student();
+			s = new Student();
 			super.readAplicant(s, input);
 			int an_studii = input.nextInt();
 			String facultate = (input.next()).toString();
