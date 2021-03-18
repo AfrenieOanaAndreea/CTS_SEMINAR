@@ -1,5 +1,6 @@
 package ro.ase.cts.program;
 
+import ro.ase.cts.clase.Avion;
 import ro.ase.cts.clase.ManagerSpital;
 import ro.ase.cts.clase.ManagerSpitalLazy;
 
@@ -21,6 +22,16 @@ public class Main {
 
 		System.out.println(managerLazy1.toString());
 		System.out.println(managerLazy2.toString());
+		
+		Avion avion1=Avion.getInstance("Boeing 747", 120, 13456);
+		Avion avion2=Avion.getInstance("A751", 50, 43456);
+		
+		avion1.setDistantaParcursa(25679);
+		avion2.setNumarLocuri(70);
+		
+		System.out.println(avion1.toString());
+		System.out.println(avion2.toString());
+		
 	}
 
 }
