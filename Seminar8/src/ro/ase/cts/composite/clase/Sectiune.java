@@ -1,4 +1,4 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.composite.clase;
 
 import java.util.List;
 import java.util.ArrayList;
