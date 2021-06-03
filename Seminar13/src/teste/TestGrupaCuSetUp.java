@@ -1,16 +1,15 @@
 package teste;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import clase.Grupa;
 import clase.Student;
+import teste.categorii.TesteGetPromovabilitate;
 
 public class TestGrupaCuSetUp {
 
@@ -34,6 +33,7 @@ public class TestGrupaCuSetUp {
 	}
 	
 	@Test(timeout = 500)
+	@Category(TesteGetPromovabilitate.class)
 	public void testPromovabilitatePerformance() {
 		grupa.getPromovabilitate();
 	}
